@@ -14,6 +14,16 @@ function writePassword() {
   passwordText.value = password;
 
 }
+// Adding prompt windows
+var upperCase = prompt("Would you like upper case letters?");
+
+var lowerCase = prompt( "Would you like lower case letters?");
+
+var specialCaracters = prompt("Would you like special character letters?");
+
+var numbers = prompt("Would you like numbers?");
+
+var passwordLenght = prompt("How many characters would you like your password to be?");
 
 function generatePassword() {
   var upperCase = window.comfirm ("Would you like upper case letters?");
