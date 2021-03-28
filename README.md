@@ -5,4 +5,20 @@ UCSD-SD-FSF-PT-03-2021-U-C-MW
 Requirement:
 
 * Want to create new secure password ny clicking generate button.
-* Present prompt window with password criteria. (Password length, special characters, )
+* Present prompt window with password criteria. (Password length, special characters, upper case letters, lower case letters and numbers)
+* Select criteria to inclode in password.
+* Choose length of at least 8 and not more than 128 characters.
+* Select character types.
+* When answered all propts at least one criteria needs to be selected.
+* When all criteria is selected password is generated and displayed on the page.
+
+JavaScript:
+
+* Adding selectors.
+* Adding Function for the adding prompt windows.
+* If no input what message to show.
+* If input is not a number what message to show.
+* If length is not between 8 and 128 what message to show.
+* Prompt windows to choose what criteria for password to be generated.
+* If non of criteria is selected what message to show.
+* User selections and random math function.

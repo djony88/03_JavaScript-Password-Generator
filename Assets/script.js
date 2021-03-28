@@ -1,4 +1,5 @@
 // Assignment Code
+// Adding selectors
 var generateBtn = document.querySelector("#generate");
 var specialCharactersArray = ["!", "@", "#", "$", "^", "&", "*", "(", ")", "-", "_", "=", "+"];
 var upperCaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
@@ -14,28 +15,33 @@ var inputNumber;
 function generatePassword(){
   userInput = window.prompt("Choose password length (Must be 8 - 128 characters!)");
   var length = Number(userInput)
+  // If no input what message to show
   if (!userInput) {
     alert("Input value requred!");
     return;
+    // If input is not a number what message to show
   } else if (isNaN(length)) {
     alert("Input must be a number");
     return;
+    // If length is not between 8 and 128 what message to show
   } else if (length < 8 || length > 128) {
     alert("Must be between 8 and 128 characters");
     return;
 }
+// Prompt windows to choose what criteria for password to be generated
 else if (length >= 8 && length <= 128) {
   inputSpecialCharacter = window.confirm("Would you like special character?");
   inputUpperCase = window.confirm("Would you like upper case letters?");
   inputLowerCase = window.confirm("Would you like lower case letters?");
   inputNumber = window.confirm("Would you like numbers?");
 
+  // What happends if non of criteria is selected
   if (!inputSpecialCharacter && !inputUpperCase && !inputLowerCase && !inputNumber) {
     alert("At least one input is required!");
     return;
   }
 }
-
+// User choices and random math function
 var userChoice = []
 if (inputSpecialCharacter) {
   userChoice = userChoice.concat(specialCharactersArray);
