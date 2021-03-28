@@ -2,6 +2,10 @@
 
 UCSD-SD-FSF-PT-03-2021-U-C-MW
 
+[GitHub link](https://github.com/djony88/03_JavaScript-Password-Generator)
+
+[Published Webpage](https://djony88.github.io/03_JavaScript-Password-Generator/)
+
 Requirement:
 
 * Want to create new secure password ny clicking generate button.
@@ -22,3 +26,5 @@ JavaScript:
 * Prompt windows to choose what criteria for password to be generated.
 * If non of criteria is selected what message to show.
 * User selections and random math function.
+
+![Webpage preview](./Assets/Images/Password_Generator_Screenshoot.png)
